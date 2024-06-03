@@ -98,7 +98,7 @@ python HE_CORDIS_updates.py [options] [country ...]
 - `country`: List of two-character country codes (or predefined sets of countries) for summary (default: NZ).
 
 Predefined country sets:
-- `pacific`: Set of independent Pacific island countries, not overseas territories of other countries
+- `pacific`: Set of independent Pacific island countries, not territories of other countries
 - `eu_members`: All current member countries of the European Union
 - `associated_countries`: Non-EU members that have Horizon Europe association agreements with the EU, such as New Zealand
 - `nordics`: The Nordic countries
