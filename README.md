@@ -10,7 +10,7 @@ See the Outputs folder for periodically updated copies of HE_calls sheets, calen
 
 #### Questions, suggestions, or requests for specific outputs?
 
-You can email [john@isospike.org](mailto:john@isospike.org) or open an issue in GitHuBb, although please don't expect an immediate reply.
+You can email [john@isospike.org](mailto:john@isospike.org) or open an issue in GitHub, although please don't expect an immediate reply.
 
 
 ## Horizon Europe calls spreadsheet generator
