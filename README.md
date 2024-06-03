@@ -6,7 +6,7 @@ This repo contains Python scripts for producing overviews of funding calls and p
 
 #### Don't want to run the code yourself?
 
-See the Outputs folder for periodically updated copies of HE_calls sheets, calendars, and CORDIS summaries for some countries, which you can download.
+See the *outputs* folder for periodically updated copies of HE_calls sheets, calendars, and CORDIS summaries for some countries, which you can download.
 
 #### Questions, suggestions, or requests for specific outputs?
 
