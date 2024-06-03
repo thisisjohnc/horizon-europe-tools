@@ -448,7 +448,7 @@ def main():
 
     ## Setup things
     country_sets = {
-    "pacific": ["CK", "FJ", "KI", "MH", "FM", "NR", "NU", "NF", "PW", "PG", "WS", "SB", "TK", "TO", "TV", "VU"],
+    "pacific": ["FJ", "KI", "MH", "FM", "NR", "PW", "PG", "WS", "SB", "TO", "TV", "VU"],
     "eu_members": ['AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'MT', 'NL', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK'],
     "associated_countries": ['AL', 'AM', 'BA', 'FO', 'GE', 'IS', 'IL', 'XK', 'MD', 'ME', 'NZ', 'MK', 'NO', 'RS', 'TN', 'TR', 'UA', 'UK'],
     "nordics": ["NO", "SE", "DK", "FI", "IS"]
