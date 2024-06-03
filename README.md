@@ -1,16 +1,17 @@
 # Horizon Europe tools [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fthisisjohnc%2Fhorizon-europe-tools&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-This repo contains Python scripts for producing overviews of funding calls and participation in Horizon Europe and previous EU Framework Programmes for Research and Innovation. I wrote them to support my work on Horizon Europe in New Zealand, but they may be useful for anyone interested in monitoring for new calls or understanding participation from different countries, such as NCPs, funding agencies, or research managers. They use data from public databases of the European Commission (the [EU Funding and Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home) and [CORDIS](https://cordis.europa.eu/projects)). 
+This repo contains Python scripts for producing overviews of funding calls and participation in Horizon Europe (and previous EU Framework Programmes for Research and Innovation). I wrote them to support my work on Horizon Europe in New Zealand, but they may be useful for anyone interested in monitoring for new calls or understanding participation from different countries, such as NCPs, funding agencies, or research managers. They use data from public databases of the European Commission (the [EU Funding and Tenders Portal](https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home) and [CORDIS](https://cordis.europa.eu/projects)). 
 
 *Note that these tools and files are the work of the author and do not represent an official output of the New Zealand Government*
 
 #### Don't want to run the code yourself?
 
-Check back here periodically for updated output files in the Outputs folder.
+See the Outputs folder for periodically updated copies of HE_calls sheets, calendars, and CORDIS info for some countries.
 
-#### Questions or suggestions?
+#### Questions, suggestions, or requests for specific outputs?
 
-You can try emailing [john@isospike.org](mailto:john@isospike.org)
+You can email [john@isospike.org](mailto:john@isospike.org) or open an issue in GitHuBb, although please don't expect an immediate reply.
+
 
 ## Horizon Europe calls spreadsheet generator
 
@@ -55,9 +56,15 @@ python HE_calls_updates.py -nc HE_calls_2024-04-16.xlsx
 ```
 
 
-## CORDIS Data Processing
+## CORDIS data summaries
 
-This repository contains a Python script designed to process data from the CORDIS (Community Research and Development Information Service) database. The script fetches, extracts, and processes project and organization data, and generates Excel reports summarizing the data for specified countries.
+This repository contains a Python script designed to process data from the CORDIS (Community Research and Development Information Service) database. The script fetches, extracts, and processes project and organisation data, and generates Excel reports summarising the data for specified countries.
+
+The resulting spreadsheet contains filterable/sortable sheets with:
+- FP_participation - all partners participating from the given countries
+- Orgs_summary - a summary of the organisations, with an overview of particpation and funding in each FP
+- FP_projects - a summary of the projects, with an overview of the countries involved
+- Countries_summary - an overview of participation from the given countries, including projects and funding in each FP
 
 ### Requirements
 
