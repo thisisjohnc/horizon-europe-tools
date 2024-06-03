@@ -114,6 +114,9 @@ def extract_without_paths(zipfile_path, extract_path):
         print(f"Error occurred: {e}")
 
 def get_country_name(country_code):
+    if country_code == 'UK': # the ISO 3166-1 alpha-2 code for the United Kingdom is GB but the data uses UK
+        country_code = 'GB'
+
     try:
         country_name = pycountry.countries.get(alpha_2=country_code.upper()).name
         return country_name
@@ -447,7 +450,7 @@ def main():
     country_sets = {
     "pacific": ["CK", "FJ", "KI", "MH", "FM", "NR", "NU", "NF", "PW", "PG", "WS", "SB", "TK", "TO", "TV", "VU"],
     "eu_members": ['AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'MT', 'NL', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK'],
-    "associated_countries": ['AL', 'AM', 'BA', 'FO', 'GE', 'IS', 'IL', 'XK', 'MD', 'ME', 'NZ', 'MK', 'NO', 'RS', 'TN', 'TR', 'UA', 'GB'],
+    "associated_countries": ['AL', 'AM', 'BA', 'FO', 'GE', 'IS', 'IL', 'XK', 'MD', 'ME', 'NZ', 'MK', 'NO', 'RS', 'TN', 'TR', 'UA', 'UK'],
     "nordics": ["NO", "SE", "DK", "FI", "IS"]
     }
 
@@ -518,6 +521,8 @@ def main():
         for item in args.country: # validate arguments as two-character country codes
             if item in country_sets:
                 selected_countries += country_sets[item]
+            elif item == 'GB': # the ISO 3166-1 alpha-2 code for the United Kingdom is GB, but the data uses UK
+                selected_countries.append('UK')
             elif not get_country_name(item):
                 print("Invalid country code:", item)
                 sys.exit(0)
