@@ -365,11 +365,12 @@ def main():
             print("No previous HE_calls files to compare to")
             compare_file = False
 
+    out_file="HE_calls_"+str(datetime.date.today())+".xlsx"
+
     new_data = False 
     if compare_file:
         # if there is a compare file, look for new calls and only write files if there are some
         new_calls = compare_calls(df, compare_file)
-        out_file="HE_calls_"+str(datetime.date.today())+".xlsx"
 
         if(len(new_calls)>0):
             print("Found {} changes compared to {}".format(str(len(new_calls)), compare_file))
